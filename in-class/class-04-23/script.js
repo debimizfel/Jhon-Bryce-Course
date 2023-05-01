@@ -1,4 +1,5 @@
 
+// Muestra una alerta arriba de la pagina
 // alert("Hello \n World");
 
 document.write("Hi <br>");
@@ -13,6 +14,7 @@ var num2 = 10;
 var sum = num1 + num2;
 var multiply = num1 * num2;
 
+// Le hablas directamente al archivo html
 document.write("num1 = " + num1 + "<br> num2 = " + num2);
 document.write("<br> sum = " + sum + "<br> multiply = " + multiply);
 document.write("<hr>")
