@@ -81,6 +81,7 @@ function question_3() {
     document.write("<hr>");
 
     var count = 0;
+    document.write("Even numbers: ");
     for (const number of numbers) {
         if (number % 2 === 0) {
             document.write("Even numbers: " + number + " ");
