@@ -1,40 +1,40 @@
 function print(v = "", end = "<br>") {
-    console.log(v);
-    // document.write(v + end);
+    //console.log(v);
+    document.write(v + end);
     // alert(v);
 }
 
-// function star() {
-//     print("* ", "");
-// }
+function star() {
+    print("* ", "");
+}
 
 // //?
-// function question_15(height, width) {
+function question_15(height, width) {
 
-//     for (var i = 0; i < height; ++i) {
-//         if ((i == 1 || i == height - 2)) {
-//             print("* ", "");
-//         }
-//         for (j = 0; j < width; ++j) {
+    for (var i = 0; i < height; ++i) {
+        if ((i == 1 || i == height - 2)) {
+            print("* ", "");
+        }
+        for (j = 0; j < width; ++j) {
 
 
-//             if ((i == 1 || i == height - 2)) {
-//                 print("&nbsp", "");
-//                 print("&nbsp", "");
-//             } else if (j <= width) {
-//                 star();
-//             }
-//         }
+            if ((i == 1 || i == height - 2)) {
+                print("&nbsp", "");
+                print("&nbsp", "");
+            } else if (j <= width) {
+                star();
+            }
+        }
 
-//         if ((i == 1 || i == height - 2)) {
-//             print("* ", "");
-//         }
+        if ((i == 1 || i == height - 2)) {
+            print("* ", "");
+        }
 
-//         print();
-//     }
-// }
+        print();
+    }
+}
 
-// // question_15(4, 6);
+question_15(4, 6);
 
 // //~-----------------------------------
 
@@ -121,7 +121,7 @@ function print(v = "", end = "<br>") {
 //     }
 // }
 
-function random() {
-    var random = Math.floor(Math.random() * 1001) + 1;
-    print(random);
-}
+// function random() {
+//     var random = Math.floor(Math.random() * 1001) + 1;
+//     print(random);
+// }
