@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="back_color" onload="load_color()">
+    <label for="color">Selecciona un color:</label>
+    <select id="color" onchange="change_color(this.value)">
+      <option value="">Seleccionar color</option>
+      <option value="#ff0000">Rojo</option>
+      <option value="#00ff00">Verde</option>
+      <option value="#0000ff">Azul</option>
+      <option value="#ffff00">Amarillo</option>
+      <option value="#ff00ff">Magenta</option>
+      <option value="#00ffff">Cian</option>
+    </select>
+
+    <script src="/question-5/color-picker/script.js"></script>
+  </body>
+</html>
