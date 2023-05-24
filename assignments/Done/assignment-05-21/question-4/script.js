@@ -1,28 +1,28 @@
 //* 1
 const books_list = [
     {
-        "id": 1,
-        "title": "The Hitchhiker's Guide to the Galaxy",
+        id: 1,
+        title: "The Hitchhiker's Guide to the Galaxy",
         "author": "Douglas Adams",
         "price": "49.99"
     },
     {
-        "id": 2,
-        "title": "The Dark Tower",
-        "author": "H. G. Wells",
-        "price": "29.99"
+        id: 2,
+        title: "The Dark Tower",
+        author: "H. G. Wells",
+        price: "29.99"
     },
     {
-        "id": 3,
-        "title": "The Fellowship of the Ring",
-        "author": "J. R. R. Tolkien",
-        "price": "39.99"
+        id: 3,
+        title: "The Fellowship of the Ring",
+        author: "J. R. R. Tolkien",
+        price: "39.99"
     },
     {
-        "id": 4,
-        "title": "The Lord of the Rings: The Fellowship of the Ring",
-        "author": "J. R. R. Tolkien",
-        "price": "35.99"
+        id: 4,
+        title: "The Lord of the Rings: The Fellowship of the Ring",
+        author: "J. R. R. Tolkien",
+        price: "35.99"
     }
 ];
 
