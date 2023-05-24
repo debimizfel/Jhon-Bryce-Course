@@ -69,3 +69,29 @@ function save_item() {
     }
 
 }
+
+
+function clear() {
+
+    const ul_items = document.getElementById("ul_items");
+    const list_str = localStorage.getItem("list");
+
+    localStorage.removeItem(list_str);
+
+}
+
+
+function load_list() {
+
+    const ul_items = document.getElementById("ul_items");
+    const list_str = localStorage.getItem("list");
+    let list = (list_str === null) ? [] : JSON.parse(list_str);
+
+    for (const obj of list) {
+        ul_items.innerHTML += `<li>Item: ${obj.item}, Amount: ${obj.amount}</li>`
+
+    }
+
+}
+
+load_list();
