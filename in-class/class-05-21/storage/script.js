@@ -73,10 +73,10 @@ function save_item() {
 
 function clear() {
 
-    const ul_items = document.getElementById("ul_items");
+
     const list_str = localStorage.getItem("list");
 
-    localStorage.removeItem(list_str);
+    localStorage.clear(list_str);
 
 }
 
