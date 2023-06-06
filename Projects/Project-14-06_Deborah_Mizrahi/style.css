@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: #909c94;
+    padding: 100px;
+
+}
+
+.board {
+    background-image: url("/assets/board.jpeg");
+    background-repeat: repeat;
+    background-size: 200px;
+    border-radius: 80px;
+    height: 10000px;
+    margin: auto;
+    max-width: 1000px;
+    padding: 50px;
+    position: relative;
+}
+
+.img_form {
+    background-image: url("/assets/form.png");
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+input{
+    background-color: unset;
+    border: unset;
+}
