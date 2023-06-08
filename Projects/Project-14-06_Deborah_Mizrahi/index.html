@@ -5,24 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rock+Salt&display=swap" rel="stylesheet" />
     <title>Deborah Mizrahi</title>
   </head>
   <body>
     <div class="board">
-      <div class="nail_top_left"></div>
-      <div class="nail_top_right"></div>
-      <div class="nail_bottom_left"></div>
-      <div class="nail_bottom_right"></div>
+      <div class="nail top left"></div>
+      <div class="nail top right"></div>
+      <div class="nail bottom left"></div>
+      <div class="nail bottom right"></div>
 
-      <h1>My board task</h1>
+      <h1 class="title">My Board Task</h1>
 
-      <div class="img_form">
-        <label for="">Date:</label>
-        <input type="date" name="" id="" />
-        <label for="">Time:</label>
-        <input type="time" name="" id="" />
+      <div class="form-bg">
+        <form>
+          <div class="due-by-row">
+            <label for="date">Date:</label>
+            <div>
+              <input type="date" name="date" id="date_box" />
+              <div id="date_err"  class="err"></div>
+            </div>
+
+            <label for="time">Time:</label>
+            <div>
+              <input type="time" name="time" id="time_box" />
+              <div id="time_err" class="err"></div>
+            </div>
+          </div>
+
+          <textarea class="task-input" rows="4" cols="50" id="textarea_box" placeholder="Type over here..."></textarea>
+
+          <div class="row-buttons">
+            <button type="button" class="bookmark-button" onclick="add_task()">Add task</button>
+            <button type="button" class="bookmark-button" onclick="clear_form()">Clear form</button>
+            <button type="button" class="bookmark-button" onclick="clear_board()">Clear board</button>
+          </div>
+        </form>
       </div>
 
+      <div class="postit-container" id="postit_container"></div>
+
+      <!-- ^ Board -->
     </div>
 
     <script src="/script.js"></script>
