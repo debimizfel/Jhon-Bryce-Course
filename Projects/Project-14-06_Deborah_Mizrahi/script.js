@@ -59,6 +59,7 @@ function create_task(date, time, task) {
         date: date,
         time: time,
         task: task,
+        random: Math.floor(Math.random() * 6) + 1,
         id: Math.floor(Math.random() * 10000000) + 1
     };
 }
@@ -88,7 +89,7 @@ function save_tasks_to_storage(tasks) {
 function create_postit(task, animate = true) {
     const postit_container = document.getElementById("postit_container");
     var div = document.createElement('div');
-    div.classList.add('postit', `postit-${Math.floor(Math.random() * 6) + 1}`);
+    div.classList.add('postit', `postit-${task.random}`);
     if (animate) {
         div.classList.add('animated');
     }
