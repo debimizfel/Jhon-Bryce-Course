@@ -16,7 +16,7 @@ function array_callbacks() {
     let result = gold_bricks.filter(gold => gold.weight > 5);
     console.log(result);
 
-    //just golds with volumes over 100
+    //* just golds with volumes over 100
     gold_bricks.filter(g => (g.width * g.height) * g.depth > 100)
         .map(g => JSON.stringify(g))
         .forEach(g => document.write(g + "<br>"));
@@ -24,7 +24,7 @@ function array_callbacks() {
     document.write("<hr>");
 
 
-    //just volumes with weight under 5
+    //* just volumes with weight under 5
     gold_bricks.filter(g => g.weight < 5)
         .map(g => (g.width * g.height) * g.depth)
         .forEach(v => document.write(v + "<br>"));
