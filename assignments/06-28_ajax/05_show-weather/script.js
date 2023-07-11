@@ -1,24 +1,19 @@
-async function get_weather(){
-    
-    // const cities_box = document.getElementById("cities_box");
+async function get_weather(cities_box) {
+    const response = await fetch(`http://api.weatherstack.com/current?access_key=39192e0453c08324b003f42b786ddc5f&query=${cities_box.value}`);
 
-    const response = await fetch(`http://api.weatherstack.com/current?access_key=39192e0453c08324b003f42b786ddc5f&query=Venezuela`);
 
-    const json = response.json();
-    display_options(json);
+    const json = await response.json();
+    display_weather(json);
+
 }
 
 
-function display_options(cities) {
-    const cities_box = document.getElementById("cities_box");
+function display_weather(weather) {
 
-    let list = "<option>Select a user</option>";
-    for (const weather of cities) {
-        list += `<option value=${weather.query}>${weather.query}</option>`;
-    }
-    cities_box.innerHTML = list;
+    const div_weather = document.getElementById("div_weather");
+    div_weather.innerHTML = `${weather.current.weather_descriptions}<img src="${weather.current.weather_icons}" alt="">`;
+
 }
-
 
 
 
